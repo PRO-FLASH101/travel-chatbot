@@ -8,6 +8,9 @@ from langchain_core.prompts import ChatPromptTemplate
 
 load_dotenv()  ## Load environment variables from .env file
 
+# Get the API token from environment variable
+api_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+
 # Define the repository ID and task
 repo_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
 task = "text-generation"
