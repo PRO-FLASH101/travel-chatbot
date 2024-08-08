@@ -93,8 +93,7 @@ if user_query is not None and user_query != "":
 # Remove any unwanted prefixes from the response u should use these function but 
 #before using it I requestto[replace("bot response:", "").strip()] combine 1&2 to run without error.
 
-    #1.response = response.replace("AI response:", "").replace("chat response:", "").
-    #2.replace("bot response:", "").strip()
+    response = response.replace("AI response:", "").replace("chat response:", "").replace("bot response:", "").strip()
 
     with st.chat_message("AI"):
         st.write(response)
